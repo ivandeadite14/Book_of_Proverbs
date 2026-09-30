@@ -645,7 +645,7 @@ const images = [
   "5.jpg",
   "6.jpg",
   "7.jpg",
-  "8.jpg"
+  "8.jpg",
   ];
   
   let previousImageIndex = -1;
