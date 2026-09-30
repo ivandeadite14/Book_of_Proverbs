@@ -23,3 +23,38 @@ button {
 img {
     
 }
+
+#verse-container {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 700px;
+    }
+    
+    #verse-image {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    object-fit: cover;
+    margin: 25px auto;
+    border-radius: 12px;
+    transition: opacity 0.5s ease;
+    }
+    
+    .container {
+    text-align: center;
+    max-width: 800px;
+    width: 90%;
+    padding: 20px;
+    }
+    
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    }
