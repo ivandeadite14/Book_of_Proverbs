@@ -636,9 +636,36 @@ const verses = [
 
 ];
 
-function getRandomVerse() {
+const images = [
+  "087.King_Solomon_in_Old_Age.jpg",
+  "1.jpg",
+  "2.jpg",
+  "3.jpg",
+  "4.jpg",
+  "5.jpg",
+  "6.jpg",
+  "7.jpg",
+  "8.jpg"
+  ];
+  
+  let previousImageIndex = -1;
+  
+  function getRandomVerse() {
   const verseContainer = document.getElementById("verse-container");
+  const verseImage = document.getElementById("verse-image");
+  
   const randomIndex = Math.floor(Math.random() * verses.length);
   const randomVerse = verses[randomIndex];
+  
+  let randomImageIndex;
+  
+  do {
+      randomImageIndex = Math.floor(Math.random() * images.length);
+  } while (randomImageIndex === previousImageIndex);
+  
+  previousImageIndex = randomImageIndex;
+  
   verseContainer.innerHTML = `<p>${randomVerse}</p>`;
+  
+  verseImage.src = images[randomImageIndex];
 }
